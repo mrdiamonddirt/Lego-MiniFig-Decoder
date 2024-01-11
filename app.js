@@ -1,17 +1,17 @@
 // series 25 minifigures
 const figtable = {
     "Barbarian": [59,60,93, "./images/figs/Barbarian.png"],
-    "Fitness Trainer": [60,61,94],
-    "Mushroom Sprite": [61,62,95],
-    "Goatherd": [62,63,96],
-    "Harpy": [63,64,97],
-    "Train Kid": [64,65,98],
-    "Film Noir Detective": [65,66,99],
-    "Sprinter": [66,67,100],
-    "Pet Groomer": [67,68,101],
+    "Fitness Trainer": [60,61,94, "./images/figs/Fitness_Trainer.png"],
+    "Mushroom Sprite": [61,62,95, "./images/figs/Mushroom_Sprite.png"],
+    "Goatherd": [62,63,96, "./images/figs/Goatherd.png"],
+    "Harpy": [63,64,97, "./images/figs/Harpy.png"],
+    "Train Kid": [64,65,98, "./images/figs/Train_Kid.png"],
+    "Film Noir Detective": [65,66,99, "./images/figs/Film_Noir_Detective.png"],
+    "Sprinter": [66,67,100, "./images/figs/Sprinter.png"],
+    "Pet Groomer": [67,68,101, "./images/figs/Pet_Groomer.png"],
     "Tricertops Costume Fan": [68,69,102, "./images/figs/Tricertops_Costume_Fan.png"],
-    "Black Falcon Gamer Girl": [69,70,103],
-    "Vampire Knight": [70,71,104],
+    "Black Falcon Gamer Girl": [69,70,103, "./images/figs/Falcon_Gamer_Girl.png"],
+    "Vampire Knight": [70,71,104, "./images/figs/Vampire_Knight.png"],
 }
 
 const scanner = new Html5QrcodeScanner("reader", {
@@ -97,6 +97,9 @@ function success(result) {
             }
         }
     }
+    document.getElementById("result").innerHTML += `
+        <p><a href="index.html">Scan another</a></p>
+        `;
 }
 
 
