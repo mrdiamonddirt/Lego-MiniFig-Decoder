@@ -2,7 +2,7 @@ main {
         display: flex;
         justify-content: center;
         align-items: center;
-    }
+}
 #reader {
     width: 600px;
 }
