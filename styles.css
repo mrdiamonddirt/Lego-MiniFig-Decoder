@@ -3,10 +3,14 @@ main {
         justify-content: center;
         align-items: center;
     }
-    #reader {
-        width: 600px;
-    }
-    #result {
-        text-align: center;
-        font-size: 1.5rem;
-    }
+#reader {
+    width: 600px;
+}
+#result {
+    text-align: center;
+    font-size: 1.5rem;
+}
+#fig-img {
+    width: 100%;
+    height: 100%;
+}
