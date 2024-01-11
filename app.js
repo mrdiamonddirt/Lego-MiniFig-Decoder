@@ -1,16 +1,16 @@
 const figtable = {
     "Barbarian": [59,60,93],
-    "Fitness Trainer": [61,62,94],
-    "Mushroom Sprite": [63,64,95],
-    "Goatherd": [65,66,96],
-    "Harpy": [67,68,97],
-    "Train Kid": [69,70,98],
-    "Film Noir Detective": [71,72,99],
-    "Sprinter": [73,74,100],
-    "Pet Groomer": [75,76,101],
-    "Tricertops Costume Fan": [77,78,102],
-    "Black Falcon Gamer Girl": [79,80,103],
-    "Vampire Knight": [81,82,104]
+    "Fitness Trainer": [60,61,94],
+    "Mushroom Sprite": [61,62,95],
+    "Goatherd": [62,63,96],
+    "Harpy": [63,64,97],
+    "Train Kid": [64,65,98],
+    "Film Noir Detective": [65,66,99],
+    "Sprinter": [66,67,100],
+    "Pet Groomer": [67,68,101],
+    "Tricertops Costume Fan": [68,69,102],
+    "Black Falcon Gamer Girl": [69,70,103],
+    "Vampire Knight": [70,71,104],
 }
 
 const scanner = new Html5QrcodeScanner("reader", {
