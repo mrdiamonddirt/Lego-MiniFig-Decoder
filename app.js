@@ -65,7 +65,7 @@ function success(result) {
                     <h2>Success!</h2>
                     <p><a href="${result}">${result}</a></p>
                     <p>${key}</p>
-                    <img id="fig-img" src="${figtable[key][3]}">
+                    <img id="fig-img" src="${figtable[key][3]}" style="width: 150px; height: auto;">
                     `;
                 break;
             }
@@ -78,6 +78,7 @@ function success(result) {
                     <h2>Success!</h2>
                     <p><a href="${result}">${result}</a></p>
                     <p>${key}</p>
+                    <img id="fig-img" src="${figtable[key][3]}" style="width: 150px; height: auto;">
                     `;
                 break;
             }
@@ -90,6 +91,7 @@ function success(result) {
                     <h2>Success!</h2>
                     <p><a href="${result}">${result}</a></p>
                     <p>${key}</p>
+                    <img id="fig-img" src="${figtable[key][3]}" style="width: 150px; height: auto;">
                     `;
                 break;
             }
