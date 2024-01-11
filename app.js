@@ -1,5 +1,6 @@
+// series 25 minifigures
 const figtable = {
-    "Barbarian": [59,60,93],
+    "Barbarian": [59,60,93, "./images/figs/Barbarian.png"],
     "Fitness Trainer": [60,61,94],
     "Mushroom Sprite": [61,62,95],
     "Goatherd": [62,63,96],
@@ -8,7 +9,7 @@ const figtable = {
     "Film Noir Detective": [65,66,99],
     "Sprinter": [66,67,100],
     "Pet Groomer": [67,68,101],
-    "Tricertops Costume Fan": [68,69,102],
+    "Tricertops Costume Fan": [68,69,102, "./images/figs/Tricertops_Costume_Fan.png"],
     "Black Falcon Gamer Girl": [69,70,103],
     "Vampire Knight": [70,71,104],
 }
@@ -52,9 +53,39 @@ function success(result) {
     // compare the numbers to the relevant table and print the name of the result
 
     // if selection is 1 we only care ablout the first valie in the figtable array
+    if (select.value == 0) {
+        document.getElementById("result").innerHTML = `
+        <h2>Please select a region</h2>
+        `;
+    }
     if (select.value == 1) {
         for (var key in figtable) {
             if (figtable[key][0] == lastTwoDigits) {
+                document.getElementById("result").innerHTML = `
+                    <h2>Success!</h2>
+                    <p><a href="${result}">${result}</a></p>
+                    <p>${key}</p>
+                    <img src="${figtable[key][3]}">
+                    `;
+                break;
+            }
+        }
+    }
+    if (select.value == 2) {
+        for (var key in figtable) {
+            if (figtable[key][1] == lastTwoDigits) {
+                document.getElementById("result").innerHTML = `
+                    <h2>Success!</h2>
+                    <p><a href="${result}">${result}</a></p>
+                    <p>${key}</p>
+                    `;
+                break;
+            }
+        }
+    }
+    if (select.value == 3) {
+        for (var key in figtable) {
+            if (figtable[key][2] == lastTwoDigits) {
                 document.getElementById("result").innerHTML = `
                     <h2>Success!</h2>
                     <p><a href="${result}">${result}</a></p>
