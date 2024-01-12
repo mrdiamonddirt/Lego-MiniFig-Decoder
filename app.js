@@ -63,6 +63,15 @@ info_btn.addEventListener("click", function () {
 }
 );
 
+// Add touchstart event for touch devices
+info_btn.addEventListener("touchstart", function (event) {
+    // Prevent the default touch behavior, which may interfere with your click event
+    event.preventDefault();
+    
+    // Trigger the click event manually
+    info_btn.click();
+});
+
 function success(result) {
     document.getElementById("result").innerHTML = `
         <h2>Success!</h2>
