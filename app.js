@@ -14,6 +14,29 @@ const figtable = {
     "Vampire Knight": [70,71,104, "./images/figs/Vampire_Knight.png"],
 }
 
+document.getElementById("fig-table").innerHTML += `
+    <tr>
+        <th>Minifigure</th>
+        <th>Europe</th>
+        <th>North America</th>
+        <th>Denmark</th>
+        <th>Image</th>
+    </tr>
+    `;
+
+// add all the data to the table
+for (var key in figtable) {
+    document.getElementById("fig-table").innerHTML += `
+        <tr>
+            <td>${key}</td>
+            <td>${figtable[key][0]}</td>
+            <td>${figtable[key][1]}</td>
+            <td>${figtable[key][2]}</td>
+            <td><img src="${figtable[key][3]}" style="width: 100px; height: auto;"></td>
+        </tr>
+        `;
+}
+
 const scanner = new Html5QrcodeScanner("reader", {
     // Scanner will be initialized in DOM inside element with id of 'reader'
     qrbox: {
@@ -25,6 +48,20 @@ const scanner = new Html5QrcodeScanner("reader", {
 
 scanner.render(success, error);
 // Starts scanner
+
+const info_btn = document.getElementById("show-table");
+// Gets info button element
+
+info_btn.addEventListener("click", function () {
+    // Adds event listener to info button
+    // set display to block if it is none and none if it is block
+    if (document.getElementById("fig-table").style.display == "none") {
+        document.getElementById("fig-table").style.display = "block";
+    } else {
+        document.getElementById("fig-table").style.display = "none";
+    }
+}
+);
 
 function success(result) {
     document.getElementById("result").innerHTML = `

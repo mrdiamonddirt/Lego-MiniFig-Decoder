@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lego MiniFig Decoder</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5-qrcode/2.3.4/html5-qrcode.min.js" integrity="sha512-k/KAe4Yff9EUdYI5/IAHlwUswqeipP+Cp5qnrsUjTPCgl51La2/JhyyjNciztD7mWNKLSXci48m7cctATKfLlQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <main>
     <h1>Series 25 Lego Mini-Figure Decoder</h1>
-    <p>Choose your region and scan the QR code on the Mini-Fig Packet</p>
+    <p>Choose your region and scan the QR code on the Mini-Fig Packet, the result will be displayed below.Use Ultra-Wide Camera on IPhone for best results.
+    </p>
     <select id="region-select">
         <option value="0">Select Region</option>
         <option value="1">North America</option>
@@ -23,6 +24,13 @@
     <!-- link to support the project at https://www.ko-fi.com/img/githubbutton_sm.svg -->
     <div id="kofi-link">
         <a href='https://ko-fi.com/rowdog' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi1.png?v=2' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+    </div>
+    <button id="show-table">i</button>
+    <div id="fig-table-container">
+    <table id="fig-table"></table>
+    </div>
+    <div id="gh-link">
+    <a href='https://github.com/mrdiamonddirt/lego-minifig-decoder' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png' border='0' alt='GitHub' /></a>
     </div>
 <script src="app.js">
 </script>
