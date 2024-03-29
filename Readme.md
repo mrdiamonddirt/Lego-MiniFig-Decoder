@@ -8,6 +8,8 @@ Can be accessed easily on mobile devices by adding the page to the home screen.
 
 https://mrdiamonddirt.github.io/Lego-MiniFig-Decoder/
 
+Video Demo: https://www.youtube.com/watch?v=XSnO7WiNIt0
+
 ## Support me
 
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/rowDog)
